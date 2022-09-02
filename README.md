@@ -6,19 +6,19 @@ This plugin generates literaure notes from the source stored in your Zotero libr
 
 
 ## Installation
-The plugin is currently not not registered as a standard community plugin for downloading or updating within Obsidian. In order to install, you need to clone or unzip the latest release into your vault's .obsidian/plugins/ directory, then enabled in the Obsidian configuration.
+The plugin is currently not registered as a standard community plugin for downloading or updating within Obsidian. In order to install, you need to clone or unzip the latest release into your vault's .obsidian/plugins/ directory, then enable it in Obsidian settings.
 
 An alternative if you have the [BRAT plugin](https://github.com/TfTHacker/obsidian42-brat/) installed: use `stefanopagliari/bibnotes` to add BibNotes Formatter as a Beta plugin, then enable it in the Community plugins tab.
 
 ## Importing your Zotero Library into Obsidian
-In order to import your references and notes from Zotero, you need to export your library as a "BetterBibTex JSON" format and save this file inside your vualt. To do to follow these steps:
+In order to import your references and notes from Zotero, you need to export your library as a "BetterBibTex JSON" format and save this file inside your vualt. To do so follow these steps:
 - install within Zotero the plugin ["Better BibTex for Zotero"](https://retorque.re/zotero-better-bibtex/installation/). For more information on how to install the plugin see the instructions on the [website of the plugin](https://retorque.re/zotero-better-bibtex/installation/).
 - in the main menu of Zotero go to File > Export Library (to export the entire library). It is also possible to to export a specific collection or group of references by selecting these, right-click, and then selecting "export collection" (in the case of a folder) or "export items" (in the case of a collection of references.
 - select the export format "**BetterBibTex Json**". 
-- select "Export Notes" if you would like to import into Obsidian the annotation. 
+- *(Optional)* select "Export Notes" if you would like to import annotations into Obsidian. Before annotations will export, they must be added to a note. In Zotero 5, plugins such as Zotfile were used. In Zotero 6, it must be done [manually](https://www.zotero.org/support/pdf_reader#adding_annotations_to_notes).
 - *(Optional)* select "Keep updated" to automatically update the exported library once an entry is added/deleted/amended
 - save the BetterBibTex JSON file in a folder **within** your Obsidian Vault
-- in the plugin settings within Obsidian add the relative path within your vault of the library to be imported, as well as the relative path within your vault of the folder where you would like the literature notes to be stored.
+- in the plugin settings within Obsidian add the *relative* path within your vault of the library to be imported, as well as the *relative* path within your vault of the folder where you would like the literature notes to be stored.
 
 ![](/images/Export_Zotero.jpg)
 
@@ -27,9 +27,7 @@ In order to import your references and notes from Zotero, you need to export you
 
 ## Commands
 The plugin introduces two commands into Obsidian:
-- **Create/Update Literature Note**: when you select this command you will be prompted to chose one of references from the library you have imported. If the reference has not been imported yet in the specified folder, a new note will be generated. If a note already exists, its content will be updated wi
-
-thout over-writing the existing annotation (e.g. comments added manually from within Obsidian and block-references will not be over-written). The first option ("Entire Library") can be selected to create/update all the notes from the imported library.
+- **Create/Update Literature Note**: when you select this command you will be prompted to chose one of references from the library you have imported. If the reference has not been imported yet in the specified folder, a new note will be generated. If a note already exists, its content will be updated without over-writing the existing annotation (e.g. comments added manually from within Obsidian and block-references will not be over-written). The first option ("Entire Library") can be selected to create/update all the notes from the imported library.
 
 ![](/images/SelectCommandExample.png)
 
