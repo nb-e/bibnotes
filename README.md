@@ -128,8 +128,8 @@ Transformations can be triggered by adding a dedicated "keyword" at the beginnin
 
 ### Highlight Colour
 In addition to using dedicated keywords at the beginning of a comment, it is possible to apply specific styling or transformations to highlights based on the colour of the highlight. The plugin recognize the highlight colour extracted by:
-- **Zotero** native reader (yellow, red, green, blue, purple) 
-- **Zotfile** plugin (black, white, gray, red,orange, yellow, green, cyan, blue, magenta). In order to export the highlight colour you will need to activate this function by going to the main menu of Zoter and selecting Preferences --> Advanced --> Config Editor. Search for "extensions.zotfile.pdfExtraction.colorAnnotations" and turn the value to "true". It is also important that the value "extensions.zotfile.pdfExtraction.colorCategories" is restored to the default value.
+- **Zotero 6** native reader (yellow, red, green, blue, purple) 
+- **Zotfile** (for Zotero 5 only) plugin (black, white, gray, red,orange, yellow, green, cyan, blue, magenta). In order to export the highlight colour you will need to activate this function by going to the main menu of Zoter and selecting Preferences --> Advanced --> Config Editor. Search for "extensions.zotfile.pdfExtraction.colorAnnotations" and turn the value to "true". It is also important that the value "extensions.zotfile.pdfExtraction.colorCategories" is restored to the default value.
 
 ### Updating Existing Notes
 In the case you are updating an existing note, you can decide in the plugin settings whether to
